@@ -136,11 +136,11 @@ impl Moc3DrawableMesh {
         self.screen_color
     }
 
-    pub(crate) fn set_multiply_color(&mut self, color: [f32; 3]) {
+    pub fn set_multiply_color(&mut self, color: [f32; 3]) {
         self.multiply_color = color;
     }
 
-    pub(crate) fn set_screen_color(&mut self, color: [f32; 3]) {
+    pub fn set_screen_color(&mut self, color: [f32; 3]) {
         self.screen_color = color;
     }
 
@@ -164,7 +164,7 @@ impl Moc3DrawableMesh {
         self.opacity
     }
 
-    pub(crate) fn set_opacity(&mut self, opacity: f32) {
+    pub fn set_opacity(&mut self, opacity: f32) {
         self.opacity = opacity;
     }
 
@@ -173,7 +173,7 @@ impl Moc3DrawableMesh {
         self.draw_order
     }
 
-    pub(crate) fn set_draw_order(&mut self, draw_order: f32) {
+    pub fn set_draw_order(&mut self, draw_order: f32) {
         self.draw_order = draw_order;
     }
 
@@ -182,7 +182,7 @@ impl Moc3DrawableMesh {
         self.render_order
     }
 
-    pub(crate) fn set_render_order(&mut self, render_order: i32) {
+    pub fn set_render_order(&mut self, render_order: i32) {
         self.render_order = render_order;
     }
 
@@ -191,7 +191,7 @@ impl Moc3DrawableMesh {
         &self.vertices
     }
 
-    pub(crate) fn vertices_mut(&mut self) -> &mut [Moc3DrawableVertex] {
+    pub fn vertices_mut(&mut self) -> &mut [Moc3DrawableVertex] {
         &mut self.vertices
     }
 
